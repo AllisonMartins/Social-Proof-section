@@ -1,3 +1,4 @@
+
 main{
     width: 100vw;
     height: 100vh;
@@ -16,10 +17,20 @@ main{
     
     
 }
-.header-landing p{
+.header-landing h1{
     font-weight: bold;
     font-size: 45px;
     text-align: center;
+}
+.header-landing p {
+    font-size: 16px;
+    color: var(--color-secundary);
+    line-height: 25px;
+    text-align: center;
+    width: 90%;
+    margin: 1.5rem ;
+    align-items: center;
+    
 }
 .subject-header {
     width: 90%;
@@ -58,7 +69,7 @@ main{
     margin-left: 10px;
 }
 .users-box{
-    margin: 15px 0;
+    margin: 15px;
     width: 90%;
     height: 300px;
     background: var(--color-primary);
@@ -96,4 +107,69 @@ main{
     font-size: 14px;
     margin: 3rem 2rem;
     line-height: 1.5rem;
+}
+
+@media (min-width: 1100px) {
+    .header {
+        max-width: 1100px;
+        width: 100%;
+        display: grid;
+        grid-template-columns:  500px 350px;
+        grid-template-areas: 
+        "logo rate"
+        "box" "box";
+    }
+    
+    .header-landing{
+        margin-left: 15rem;
+    }
+    .header-landing h1{
+        font-weight: bold;
+        font-size: 35px;
+        text-align: left;
+    }
+    .header-landing p {
+        text-align: left;
+    }
+    .rater{
+        margin-top: 8rem;
+    }
+    .rater-content{
+        text-align: left;
+        height: 4rem;
+        width: 50rem;
+        margin-left: 10rem;
+        
+    }
+    .rater-content p {
+       margin-left: 18rem;
+    }
+    .rater-content img {
+        float: left;
+        margin-top: 0.6rem;
+    }
+    #second-rater{
+        margin-top: 1.5rem;
+        margin-left: 14rem;
+    }
+    #third-rater{
+        margin-left: 18rem;
+        margin-top: 1.5rem;
+    }
+    .box {
+        
+        display: flex;
+        flex-direction: row;
+        margin-left: 70rem;
+    }
+   .users-box{
+       height: 200px;
+       width: 350px;
+   }
+   #user2{
+       margin-top:3rem;
+   }
+   #user3{
+    margin-top: 6rem;
+}
 }
